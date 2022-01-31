@@ -9,7 +9,7 @@ spring:
   config:
     request-read-timeout: 30
     import:
-      - configserver:http://localhost:8080
+      - configserver:http://localhost:8888
 management:
   endpoint:
     health:
@@ -20,7 +20,8 @@ management:
       exposure:
         include: '*'
 
-
+server:
+  port: 8080
 
 
 
